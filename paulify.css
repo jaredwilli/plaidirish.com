@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a, a:link {
 }
 
 .paulify_pic:hover {
-	-webkit-transform: rotate(-10deg) scale(1.2,1.2); 
-	-moz-transform: rotate(-10deg) scale(1.2,1.2); 
-	transform: rotate(-10deg) scale(1.2,1.2); 
+	-webkit-transform: rotate(-10deg) scale(2,2); 
+	-moz-transform: rotate(-10deg) scale(2,2); 
+	transform: rotate(-10deg) scale(2,2); 
+	transform: rotate(-10deg) scale(2,2); 
 }

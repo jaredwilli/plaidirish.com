@@ -6,7 +6,25 @@
     Code Below known to cause permanent brain damage
 */
 $(function() {
-$(document).ready(function(){
+	/**
+	 * Ironically this script was written by the 
+	 * man himself for cornify, and modified so
+	 * you can plaidirish the web.
+	 */
+	var kkeys = [], 
+		konami = "38,38,40,40,37,39,37,39,66,65";
+	$(document).keydown(function(e) {
+	  kkeys.push( e.keyCode );
+	  if ( kkeys.toString().indexOf( konami ) >= 0 ){
+		$(document).unbind('keydown', arguments.callee);
+		$.getScript('paulify.js',
+		  function(){
+			  paulify_add();
+			  $(document).keydown(paulify_add);
+		});          
+	  }
+	});
+
     //set random position and angle
     $(".pic").each(function() { 
        throwAround($(this)); 
@@ -146,7 +164,4 @@ $(document).ready(function(){
 
 
     }
-});
-
-
 });
